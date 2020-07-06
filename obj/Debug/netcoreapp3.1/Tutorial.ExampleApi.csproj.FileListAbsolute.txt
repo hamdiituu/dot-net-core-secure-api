@@ -131,3 +131,8 @@
 /Users/hamditug/Desktop/Studies/DotNet Core/Tutorial/Tutorial.ExampleApi/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Runtime.Caching.dll
 /Users/hamditug/Desktop/Studies/DotNet Core/Tutorial/Tutorial.ExampleApi/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
 /Users/hamditug/Desktop/Studies/DotNet Core/Tutorial/Tutorial.ExampleApi/obj/Debug/netcoreapp3.1/Tutorial.ExampleApi.csproj.CopyComplete
+/Users/hamditug/Desktop/Studies/DotNet Core/Tutorial/Tutorial.ExampleApi/bin/Debug/netcoreapp3.1/Microsoft.OpenApi.dll
+/Users/hamditug/Desktop/Studies/DotNet Core/Tutorial/Tutorial.ExampleApi/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.Swagger.dll
+/Users/hamditug/Desktop/Studies/DotNet Core/Tutorial/Tutorial.ExampleApi/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/hamditug/Desktop/Studies/DotNet Core/Tutorial/Tutorial.ExampleApi/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/hamditug/Desktop/Studies/DotNet Core/Tutorial/Tutorial.ExampleApi/obj/Debug/netcoreapp3.1/Tutorial.ExampleApi.MvcApplicationPartsAssemblyInfo.cs

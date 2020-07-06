@@ -15,6 +15,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 
 namespace Tutorial.ExampleApi
 {
@@ -29,7 +30,13 @@ namespace Tutorial.ExampleApi
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
+
         {
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
+            });
+
             var connection = Configuration.GetConnectionString("InventoryDatabase");
             services.AddDbContextPool<TutorialContext>(options => options.UseSqlServer(connection));
             services.AddControllers();
@@ -55,6 +62,12 @@ namespace Tutorial.ExampleApi
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Swagger");
+            });
 
             app.UseHttpsRedirection();
 
